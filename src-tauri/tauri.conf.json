@@ -1,0 +1,28 @@
+{
+  "build": {
+    "beforeDevCommand": "echo 'skipping frontend dev'",
+    "beforeBuildCommand": "echo 'skipping frontend build'",
+    "devUrl": "https://web.whatsapp.com"
+  },
+  "bundle": {
+    "active": true,
+    "targets": ["deb", "AppImage"]
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "BetterWhatsApp",
+        "width": 1200,
+        "height": 800,
+        "url": "https://web.whatsapp.com",
+        "label": "main"
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "productName": "BetterWhatsApp",
+  "version": "0.1.0",
+  "identifier": "com.example.betterwhatsapp"
+}

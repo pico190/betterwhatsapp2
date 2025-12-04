@@ -6,7 +6,7 @@
   },
   "bundle": {
     "active": true,
-    "targets": ["deb", "AppImage"]
+    "targets": ["snap"]
   },
   "app": {
     "windows": [

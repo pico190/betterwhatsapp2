@@ -1,0 +1,49 @@
+name: betterwhatsapp
+version: 0.1.0
+title: BetterWhatsApp
+summary: Lightweight WhatsApp client for Linux
+description: |
+  A minimal WhatsApp client for Linux built with Tauri and WebKit.
+  Features include system tray integration, unread message badges,
+  and native notifications.
+
+base: core22
+confinement: strict
+grade: stable
+
+apps:
+  betterwhatsapp:
+    command: usr/bin/betterwhatsapp
+    plugs:
+      - home
+      - network
+      - network-bind
+      - x11
+      - wayland
+      - opengl
+      - pulseaudio
+      - notification-daemon
+
+parts:
+  betterwhatsapp:
+    plugin: rust
+    source: .
+    source-subdir: src-tauri
+    rust-channel: stable
+    build-packages:
+      - libwebkit2gtk-4.1-dev
+      - build-essential
+      - curl
+      - wget
+      - file
+      - libssl-dev
+      - libayatana-appindicator3-dev
+      - librsvg2-dev
+      - libnotify-dev
+      - libsoup2.4-dev
+      - pkg-config
+    stage-packages:
+      - libwebkit2gtk-4.1-0
+      - libayatana-appindicator3-1
+      - libnotify4
+      - libsoup2.4-1

@@ -1,12 +1,10 @@
 {
+  "productName": "BetterWhatsApp",
+  "version": "0.1.0",
+  "identifier": "com.example.betterwhatsapp",
   "build": {
-    "beforeDevCommand": "echo 'skipping frontend dev'",
-    "beforeBuildCommand": "echo 'skipping frontend build'",
-    "devUrl": "https://web.whatsapp.com"
-  },
-  "bundle": {
-    "active": true,
-    "targets": ["snap"]
+    "beforeDevCommand": "echo starting dev",
+    "beforeBuildCommand": "echo building"
   },
   "app": {
     "windows": [
@@ -22,7 +20,8 @@
       "csp": null
     }
   },
-  "productName": "BetterWhatsApp",
-  "version": "0.1.0",
-  "identifier": "com.example.betterwhatsapp"
+  "bundle": {
+    "active": true,
+    "targets": ["deb"]
+  }
 }

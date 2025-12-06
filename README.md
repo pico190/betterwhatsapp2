@@ -4,6 +4,9 @@ A lightweight WhatsApp client for Linux built with Tauri and WebKit.
 
 ## Installation
 
+> [!WARNING]
+> For users from v1, please uninstall the previous version using `snap remove better-whatsapp` before installing this new version.
+
 ```bash
 snap install better-whatsapp
 ```

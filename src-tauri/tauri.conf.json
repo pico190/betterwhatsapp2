@@ -1,6 +1,6 @@
 {
   "productName": "better-whatsapp",
-  "version": "0.1.0",
+  "version": "2.0.0",
   "identifier": "better-whatsapp",
   "build": {
     "beforeDevCommand": "echo starting dev",

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=BetterWhatsApp
+Comment=WhatsApp Desktop Client
+Exec=better-whatsapp
+Icon=better-whatsapp
+Terminal=false
+Type=Application
+Categories=Network;InstantMessaging;
+StartupWMClass=better-whatsapp

@@ -1,27 +1,33 @@
 {
-  "productName": "BetterWhatsApp",
+  "productName": "better-whatsapp",
   "version": "0.1.0",
-  "identifier": "com.example.betterwhatsapp",
+  "identifier": "better-whatsapp",
   "build": {
     "beforeDevCommand": "echo starting dev",
     "beforeBuildCommand": "echo building"
   },
   "app": {
-    "windows": [
-      {
-        "title": "BetterWhatsApp",
-        "width": 1200,
-        "height": 800,
-        "url": "https://web.whatsapp.com",
-        "label": "main"
-      }
-    ],
+    "windows": [],
     "security": {
       "csp": null
     }
   },
   "bundle": {
     "active": true,
-    "targets": ["deb"]
+    "targets": ["deb"],
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/icon.png",
+      "icons/whatsapp.ico"
+    ],
+    "linux": {
+      "appimage": {
+        "bundleMediaFramework": true
+      },
+      "deb": {
+        "desktopTemplate": null
+      }
+    }
   }
 }
